@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nelly" />
+    <meta name="description" content="Catálogo de productos de boutique" />
+    <meta name="keywords" content="moda, vestidos, boutique" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titulo -->
+    <title>Fashion boutique | Registro de usuario</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Sacramento&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <!-- Barra de navegacion -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNav"
+          >
+            <a class="navbar-brand" href="#">
+              <figure>
+                <img
+                  src="./images/favicon.png"
+                  alt="logo"
+                  width="20"
+                  height="20"
+                />
+                <span>Fashion Boutique</span>
+              </figure>
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html"
+                  >Catálogo de productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./form.html"
+                  >Registrar usuario</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenido-formulario">
+      <!-- Titulo -->
+      <div
+        class="container-fluid d-flex align-items-center justify-content-start titulo"
+      >
+        <h1>Crear cuenta</h1>
+      </div>
+
+      <!-- Formulario de usuario -->
+      <div class="container">
+        <form action="./registrocontacto.html" method="post" target="_blank">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              Nunca compartiremos tu correo electrónico con nadie más.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" />
+          </div>
+          <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+      </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="container-fluid bg-body-tertiary text-center text-lg-start">
+      <!-- Autor -->
+      <div class="text-center p-3">Desarrollado por Nelly , 2023</div>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>
